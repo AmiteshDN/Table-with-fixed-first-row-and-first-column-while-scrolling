@@ -1,0 +1,129 @@
+body {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+/* Containers */
+.container1, .container6 {
+  margin-top: 10px;
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.container2 {
+  margin-top: 10px;
+  height: 60px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.container3 {
+  margin-top: 10px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.container4 {
+  margin-top: 10px;
+  height: 150px;
+  width: 64%;
+  overflow: hidden;
+}
+
+.container5 {
+  margin-top: 10px;
+  height: 120px;
+  width: 38%;
+  overflow: hidden;
+}
+
+.container7 {
+  margin-top: 10px;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* tables */
+.table1, .table2, .table3, .table4, .table5, .table6, .table7 {
+  position: relative;
+  background-color: #fff;
+  border-collapse: collapse;
+  table-layout: fixed;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+/*thead*/
+.table1-head, .table2-head, .table3-head, .table4-head,
+.table5-head, .table6-head, .table7-head {
+  position: relative;
+  display: block;
+  /*seperates the header from the body allowing it to be positioned*/
+}
+
+.table1-head th, .table6-head th, .table7-head th {
+  padding: 5px 0;
+  background-color: #a3d2ca;
+  min-width: 182px;
+  border: 0.5px solid #999b84;
+}
+
+.table1-head th:nth-child(1), .table2-head th:nth-child(1), .table3-head th:nth-child(1),
+.table4-head th:nth-child(1), .table5-head th:nth-child(1), .table6-head th:nth-child(1),
+.table7-head th:nth-child(1) {
+  /*first cell in the header*/
+  position: relative;
+  background-color: #a3d2ca;
+}
+
+/*tbody*/
+.table1-body, .table2-body, .table3-body, .table4-body, .table5-body, .table6-body, .table7-body {
+  flex: 1;
+  position: relative;
+  display: block;
+  /*seperates the tbody from the header*/
+  overflow: auto;
+}
+
+.table1-body td, .table6-body td, .table7-body td {
+  padding: 5px 0;
+  background-color: #fff;
+  min-width: 182px;
+  border: 0.5px solid #999b84;
+}
+
+.table1-body tr td:nth-child(1), .table2-body tr td:nth-child(1), .table3-body tr td:nth-child(1),
+.table4-body tr td:nth-child(1), .table5-body tr td:nth-child(1), .table6-body tr td:nth-child(1),
+.table7-body tr td:nth-child(1) {
+  /*the first cell in each tr*/
+  position: relative;
+  background-color: #a3d2ca;
+}
+
+.table2-head th, .table3-head th, .table4-head th {
+  background-color: #a3d2ca;
+  min-width: 184px;
+  border: 0.5px solid #999b84;
+}
+
+.table2-body td, .table3-body td, .table4-body td {
+  background-color: #fff;
+  min-width: 184px;
+  border: 0.5px solid #999b84;
+}
+
+.table5-head th {
+  background-color: #a3d2ca;
+  min-width: 180px;
+  border: 0.5px solid #999b84;
+}
+
+.table5-body td {
+  background-color: #fff;
+  min-width: 180px;
+  border: 0.5px solid #999b84;
+}
